@@ -21,7 +21,9 @@ In your composer.json add:
         ...
         "jartaud/laravel-braintree-subscription": "@dev"
         ...
-    },
+    }
+
+and then run:
 
 ```bash
 composer update
