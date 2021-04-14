@@ -1,0 +1,23 @@
+{
+    "Add-Ons": "Add-Ons",
+    "Amount": "Amount",
+    "Braintree failed to create subscription": "Braintree failed to create subscription",
+    "Braintree failed to swap plans": "Braintree failed to swap plans",
+    "Braintree was unable to create a payment method": "Braintree was unable to create a payment method",
+    "Braintree was unable to perform a charge": "Braintree was unable to perform a charge",
+    "Charge": "Charge",
+    "Date": "Date",
+    "Description": "Description",
+    "Discounts": "Discounts",
+    "Invoice": "Invoice",
+    "Receipt": "Receipt",
+    "Subscription To": "Subscription To",
+    "To": "To",
+    "Total": "Total",
+    "Unable to apply coupon. Subscription does not exist.": "Unable to apply coupon. Subscription does not exist.",
+    "Unable to apply coupon. Subscription not active.": "Unable to apply coupon. Subscription not active.",
+    "Unable to create Braintree customer": "Unable to create Braintree customer",
+    "Unable to find Braintree plan with ID [:id].": "Unable to find Braintree plan with ID [:id].",
+    "Unable to guess symbol for currency. Please explicitly specify it.": "Unable to guess symbol for currency. Please explicitly specify it.",
+    "Unable to resume subscription that is not within grace period.": "Unable to resume subscription that is not within grace period."
+}
