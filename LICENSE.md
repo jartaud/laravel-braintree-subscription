@@ -1,6 +1,7 @@
 MIT License
 
 Copyright (c) Josué Artaud
+
 Copyright (c) Taylor Otwell
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
