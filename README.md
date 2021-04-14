@@ -1,53 +1,41 @@
-# Very short description of the package
+# Laravel Cashier - Braintree Edition
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/jartaud/laravel-braintree-subscription.svg?style=flat-square)](https://packagist.org/packages/jartaud/laravel-braintree-subscription)
-[![Build Status](https://img.shields.io/travis/jartaud/laravel-braintree-subscription/master.svg?style=flat-square)](https://travis-ci.org/jartaud/laravel-braintree-subscription)
-[![Quality Score](https://img.shields.io/scrutinizer/g/jartaud/laravel-braintree-subscription.svg?style=flat-square)](https://scrutinizer-ci.com/g/jartaud/laravel-braintree-subscription)
-[![Total Downloads](https://img.shields.io/packagist/dt/jartaud/laravel-braintree-subscription.svg?style=flat-square)](https://packagist.org/packages/jartaud/laravel-braintree-subscription)
+## Introduction
 
-This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what PSRs you support to avoid any confusion with users and contributors.
+Laravel Cashier Braintree provides an expressive, fluent interface to [Braintree's](https://www.braintreepayments.com/) subscription billing services. It handles almost all of the boilerplate subscription billing code you are dreading writing. In addition to basic subscription management, Cashier Braintree can handle coupons, swapping subscription, cancellation grace periods, and even generate invoice PDFs.
 
-## Installation
+## Testing
 
-You can install the package via composer:
+You will need to set the following details locally and on your Braintree account in order to run the library's tests.
 
-```bash
-composer require jartaud/laravel-braintree-subscription
-```
+### Local
 
-## Usage
+#### Environment Variables
 
-``` php
-// Usage description here
-```
+    BRAINTREE_MERCHANT_ID=
+    BRAINTREE_PUBLIC_KEY=
+    BRAINTREE_PRIVATE_KEY=
+    BRAINTREE_MODEL=Jartaud\LaravelBraintreeSubscription\Tests\User
+    
+You can set these variables in the `phpunit.xml.dist` file.
 
-### Testing
+### Braintree
 
-``` bash
-composer test
-```
+#### Plans
 
-### Changelog
+    * Plan ID: monthly-10-1, Price: $10, Billing cycle of every month
+    * Plan ID: monthly-10-2, Price: $10, Billing cycle of every month
+    * Plan ID: yearly-100-1, Price: $100, Billing cycle of every 12 months
 
-Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
+#### Discount
 
-## Contributing
+    * Discount ID: coupon-1, Price: $5
+    * Discount ID: plan-credit, Price $1
 
-Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
+## Official Documentation
 
-### Security
-
-If you discover any security related issues, please email josue.artaud@gmail.com instead of using the issue tracker.
-
-## Credits
-
-- [Josué Artaud](https://github.com/jartaud)
-- [All Contributors](../../contributors)
+Documentation for Cashier Braintree can be found on the [Laravel website](https://laravel.com/docs/5.8/braintree).
 
 ## License
 
-The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
-
-## Laravel Package Boilerplate
-
-This package was generated using the [Laravel Package Boilerplate](https://laravelpackageboilerplate.com).
+Laravel Cashier Braintree is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
