@@ -27,6 +27,7 @@ and then run:
 
 ```bash
 composer update
+```
 
 ## Testing
 
